@@ -1,11 +1,13 @@
 <template>
-    <div>
-        Register Page
-    </div>
+    <Register />
 </template>
+
 <script>
+import Register from '@/components/register/Register.vue';
 export default {
-    
+    components: {
+        Register,
+    }
 }
 </script>
 <style>

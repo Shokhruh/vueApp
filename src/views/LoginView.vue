@@ -1,13 +1,13 @@
 <template>
     <div>
-        <Form />
+        <Login />
     </div>
 </template>
 <script>
-import {Form} from "@/components"
+import {Login} from "@/components"
     export default {
         components: {
-            Form,
+            Login,
         }
     }
 </script>
