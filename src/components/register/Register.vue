@@ -9,14 +9,24 @@
             
             <Input :label="'Password'" :type="'password'" :placeholder="'Password'" :id="'floatingPassword'" />
 
-            <Button type="submit">Register</Button>
+            <Button type="submit" :disabled="isLoading" @click="submitHandler">Register</Button>
         </form>
     </main>
 </template>
 
 <script>
     export default {
-        
+        computed: {
+            isLoading() {
+                return this.$store.state.auth.isLoading
+            }
+        },
+        methods: {
+            submitHandler(e) {
+                e.preventDefault();
+                this.$store.commit('setLoading')
+            }
+        }
     }
 </script>
 
