@@ -23,9 +23,14 @@
         },
         methods: {
             submitHandler(e) {
-                e.preventDefault();
-                this.$store.dispatch('register')
-            }
+                e.preventDefault()
+                const data = {
+                    "username": "sasdsasa",
+                    "email": "sakjadss@gmail.com",
+                    "password": "1232sd3h3",
+                }
+                this.$store.dispatch('register', data)
+            },
         }
     }
 </script>

@@ -1,1 +1,1 @@
-export const logo = "https://www.google.com/imgres?q=brand%20logo&imgurl=http%3A%2F%2Fassets.whirlpoolcorp.com%2Flogos%2FJennAir-Brand-Logo-2018.png&imgrefurl=https%3A%2F%2Fwww.whirlpoolcorp.com%2Flogos%2F&docid=N-BXMMtQZX7P_M&tbnid=vIfZAY1sVFe9vM&vet=12ahUKEwjwkOSOlPGFAxWUIhAIHd_QBDUQM3oECGIQAA..i&w=7000&h=2394&hcb=2&ved=2ahUKEwjwkOSOlPGFAxWUIhAIHd_QBDUQM3oECGIQAA";
+export const logo = "https://api.realworld.io/images/smiley-cyrus.jpeg";

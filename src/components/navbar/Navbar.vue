@@ -1,7 +1,7 @@
 <template>
     <div class="d-flex flex-column flex-md-row align-items-center py-3 mb-4 border-bottom">
         <router-link class="d-flex align-items-center link-body-emphasis text-decoration-none" :to="{name: 'home'}">
-            <img :src="logo" alt="Logo">
+            <img :src="logo" style="width: 80px;" alt="Logo">
         </router-link>
 
     <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
