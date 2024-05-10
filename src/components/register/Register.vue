@@ -25,7 +25,7 @@
         },
         computed: {
             isLoading() {
-                return this.$store.state.auth.isLoading,
+                return this.$store.state.auth.isLoading
             },
         },
         methods: {
@@ -38,7 +38,14 @@
                 }
                 this.$store
                     .dispatch('register', data)
-                    .then(user => { console.log(user) })
+                    .then(user => { 
+                        console.log(user),
+                        this.$router.push({
+                            path: '/',
+                            name: 'home',
+                            component: () => import('@/views/HomeView.vue'),
+                        },)
+                    })
                     .catch(error => { console.log("Error", error) })
             },
         },
