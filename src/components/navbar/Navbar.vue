@@ -19,6 +19,11 @@
                 logo,
             }
         },
+        methods: {
+            toHomeHandler() {
+                return this.$router.push({name: "home"})
+            }
+        },
     }
 
 </script>

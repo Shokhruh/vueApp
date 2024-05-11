@@ -32,19 +32,15 @@
             submitHandler(e) {
                 e.preventDefault()
                 const data = {
-                    "username": this.username,
-                    "email": this.email,
-                    "password": this.password,
+                    username: this.username,
+                    email: this.email,
+                    password: this.password
                 }
                 this.$store
                     .dispatch('register', data)
                     .then(user => { 
                         console.log(user),
-                        this.$router.push({
-                            path: '/',
-                            name: 'home',
-                            component: () => import('@/views/HomeView.vue'),
-                        },)
+                        this.$router.push({name: 'home'})
                     })
                     .catch(error => { console.log("Error", error) })
             },
